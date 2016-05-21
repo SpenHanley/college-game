@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grass">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100sp"
+        android:text="Game Over"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restart"
+        android:text="@string/restart"
+        android:background="#e74c3c"
+        android:textColor="#ffffff"
+        android:onClick="changeToGame"
+        android:layout_marginRight="196dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:id="@+id/quit"
+        android:background="#e74c3c"
+        android:textColor="#ffffff"
+        android:onClick="quit"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignTop="@+id/restart"
+        android:layout_toLeftOf="@+id/restart"
+        android:layout_toStartOf="@+id/restart" />
+
+</RelativeLayout>
