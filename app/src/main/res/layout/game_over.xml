@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grass">
+    android:background="@drawable/grass"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="100sp"
-        android:text="Game Over"
         android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Game Over"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100sp" />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/restart"
-        android:text="@string/restart"
-        android:background="#e74c3c"
-        android:textColor="#ffffff"
-        android:onClick="changeToGame"
-        android:layout_marginRight="196dp"
-        android:layout_marginEnd="196dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quit"
-        android:id="@+id/quit"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="35dp"
         android:background="#e74c3c"
-        android:textColor="#ffffff"
-        android:onClick="quit"
-        android:layout_marginRight="49dp"
-        android:layout_marginEnd="49dp"
+        android:onClick="changeToGame"
+        android:text="@string/restart"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
         android:layout_alignTop="@+id/restart"
-        android:layout_toLeftOf="@+id/restart"
-        android:layout_toStartOf="@+id/restart" />
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:background="#e74c3c"
+        android:onClick="quit"
+        android:text="@string/quit"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
